@@ -38,6 +38,10 @@ class UserProfileActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        imgToolBarBtnBack.setOnClickListener {
+            finish()
+        }
+
         userProfile = intent.getSerializableExtra("id") as UserModel
 
         loadUserPorfile(userProfile.id)

@@ -92,23 +92,23 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/profilePhone"
+                    android:id="@+id/profileUser"
                     android:textColorLink="#000"
                     android:textColor="#BC9393"
                     android:contextClickable="true"
                     android:textStyle="italic"
                     android:textSize="16sp"
-                    android:text="Phone number"
+                    android:text="Get Full Profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/profileLocation"
+                    android:id="@+id/profilePosts"
                     android:layout_marginTop="8dp"
                     android:textColor="#BC9393"
                     android:textStyle="italic"
                     android:textSize="16sp"
-                    android:text="address"
+                    android:text="Get Posts List"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

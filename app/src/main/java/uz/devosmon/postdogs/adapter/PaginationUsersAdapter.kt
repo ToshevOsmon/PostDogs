@@ -12,11 +12,14 @@ import uz.devosmon.postdogs.R
 import uz.devosmon.postdogs.model.UserModel
 
 
-interface ItemClick{
+interface ItemClick {
     fun onClick(userModel: UserModel)
+    fun onPostClick(userModel: UserModel)
+
 }
 
-class PaginationUsersAdapter(val context: Context,val itemListener:ItemClick) :
+
+class PaginationUsersAdapter(val context: Context, val itemListener: ItemClick) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var lists: ArrayList<UserModel>
@@ -34,10 +37,10 @@ class PaginationUsersAdapter(val context: Context,val itemListener:ItemClick) :
 
         fun onBind(userModel: UserModel) {
 
-            view.profileName.text = userModel.title + " " + userModel.firstName
-            view.profileEmail.text = userModel.lastName
-            view.profileLocation.text = userModel.email
+            view.profileName.text = userModel.title + " " + userModel.firstName+" "+userModel.lastName
+            view.profileEmail.text = userModel.email
             Glide.with(view.context).load(userModel.picture).into(view.profileImage)
+
 
         }
 
@@ -102,8 +105,13 @@ class PaginationUsersAdapter(val context: Context,val itemListener:ItemClick) :
                 var userViewHolder: UserViewHolder = holder as UserViewHolder
                 userViewHolder.onBind(userModel)
 
-                holder.itemView.setOnClickListener {
+                userViewHolder.view.profileUser.setOnClickListener {
                     itemListener.onClick(userModel)
+                }
+
+                userViewHolder.view.profilePosts.setOnClickListener {
+
+                    itemListener.onPostClick(userModel)
                 }
 
             }

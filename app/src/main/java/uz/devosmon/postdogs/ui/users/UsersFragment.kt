@@ -17,6 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
+import uz.devosmon.postdogs.PostsActivity
 import uz.devosmon.postdogs.R
 import uz.devosmon.postdogs.UserProfileActivity
 import uz.devosmon.postdogs.adapter.ItemClick
@@ -66,6 +67,14 @@ class UsersFragment : Fragment() {
                 var intent = Intent(activity, UserProfileActivity::class.java)
                 intent.putExtra("id", userModel)
                 startActivity(intent)
+            }
+
+            override fun onPostClick(userModel: UserModel) {
+
+                var intent = Intent(activity, PostsActivity::class.java)
+                intent.putExtra("extra_data", userModel)
+                startActivity(intent)
+
             }
         })
         users_recycler?.adapter = paganaitonAdapter

@@ -52,9 +52,9 @@ class MainActivity : AppCompatActivity() {
 
                 AlertDialog.Builder(this)
                     .setTitle("Android Developer")
-                    .setMessage("FullName: Tosehv Osmon\n" +
-                            "Email: toshev.osmon@gmail.com\n" +
-                            "Phone: +998946530255")
+                    .setMessage("FullName: Toshev Osmon \n" +
+                            "Email: toshev.osmon@gmail.com \n" +
+                            "Phone: +998946530255 \n")
                     .create()
                     .show()
 
