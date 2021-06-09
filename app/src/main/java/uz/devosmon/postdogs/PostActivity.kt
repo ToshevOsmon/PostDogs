@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.activity_post.*
 import uz.devosmon.postdogs.model.PostModel
 
 class PostActivity : AppCompatActivity() {
-    lateinit var post: PostModel
 
+    lateinit var post: PostModel
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

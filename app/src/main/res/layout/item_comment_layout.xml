@@ -54,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_2sdp"
-                    android:text="Aprel 17 2020 17:30:28" />
+                    android:text="@string/aprel_17_2020_17_30_28" />
             </LinearLayout>
 
         </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_height="@dimen/_1sdp"
             android:layout_marginLeft="@dimen/_8sdp"
             android:layout_marginRight="@dimen/_8sdp"
-            android:background="#80C6C6C6" />
+            android:background="@color/grey" />
 
 
         <TextView

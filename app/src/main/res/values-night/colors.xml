@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3C3C3C</color>
+    <color name="colorPrimaryDark">#6E696E</color>
+    <color name="colorAccent">#000</color>
+    <color name="white">#000000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="pink">#ACED9E</color>
+    <color name="transparent" />
+    <color name="grey">#6CFBCE</color>
+    <color name="bg_post">#898A8A</color>
+    <color name="email_color">#02730F</color>
+</resources>

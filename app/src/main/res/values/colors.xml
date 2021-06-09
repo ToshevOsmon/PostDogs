@@ -5,6 +5,9 @@
     <color name="colorAccent">#000</color>
     <color name="white">#fff</color>
     <color name="black">#000000</color>
-    <color name="pink">#F7DBD9</color>
+    <color name="pink">#F4C9C6</color>
     <color name="transparent" />
+    <color name="grey">#807A7A</color>
+    <color name="bg_post">#EFF1F1</color>
+    <color name="email_color">#1D1DF6</color>
 </resources>

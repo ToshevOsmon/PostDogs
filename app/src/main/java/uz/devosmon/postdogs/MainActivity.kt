@@ -1,8 +1,13 @@
 package uz.devosmon.postdogs
 
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.CompoundButton
+import android.widget.Switch
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,11 +17,15 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.settings_layout.*
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var appBarConfiguration: AppBarConfiguration
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,11 +61,21 @@ class MainActivity : AppCompatActivity() {
 
                 AlertDialog.Builder(this)
                     .setTitle("Android Developer")
-                    .setMessage("FullName: Toshev Osmon \n" +
-                            "Email: toshev.osmon@gmail.com \n" +
-                            "Phone: +998946530255 \n")
+                    .setMessage(
+                        "FullName: Toshev Osmon \n" +
+                                "Email: toshev.osmon@gmail.com \n" +
+                                "Phone: +998946530255 \n"
+                    )
                     .create()
                     .show()
+
+            }
+            R.id.settings -> {
+
+
+                var sittingsDialog = SittingsDialog()
+                sittingsDialog.show(supportFragmentManager,"sittings dialog")
+
 
             }
         }
@@ -70,3 +89,5 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
+
+
