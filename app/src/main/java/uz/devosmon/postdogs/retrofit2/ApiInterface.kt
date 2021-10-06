@@ -9,13 +9,13 @@ import uz.devosmon.postdogs.model.Users
 
 interface ApiInterface {
 
-    @Headers("app-id:60adf17d9a4129428cab300b")
+    @Headers("app-id:615df7bc37c0e25db0c15f1c")
     @GET("user")
     fun getUser(@Query("page") page:Int,
                 @Query("limit") limit:Int=10
     ): Call<Users>
 
-    @Headers("app-id:60adf17d9a4129428cab300b")
+    @Headers("app-id:615df7bc37c0e25db0c15f1c")
     @GET("post")
     fun getPosts(
         @Query("page") page: Int,

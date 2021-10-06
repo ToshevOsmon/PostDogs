@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiService{
 
 
-    var BASE_URL = "https://dummyapi.io/data/api/"
+    var BASE_URL = "https://dummyapi.io/data/v1/"
 
     fun getRetrofit(): Retrofit {
 

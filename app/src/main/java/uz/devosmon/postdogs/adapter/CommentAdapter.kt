@@ -32,7 +32,6 @@ class CommentAdapter(val items: List<CommentModel>) :
     @SuppressLint("SimpleDateFormat", "SetTextI18n")
     override fun onBindViewHolder(holder: ItemHolder, position: Int) {
         val item = items[position]
-        Log.d("TTTT", "onBindViewHolder work")
         holder.itemView.userNameId.text = item.owner.firstName + " " + item.owner.lastName
         holder.itemView.textComment.text = item.message
 
@@ -50,8 +49,6 @@ class CommentAdapter(val items: List<CommentModel>) :
             }).toString()
 
         holder.itemView.dateId.text = formatDate
-
-        Log.d("TTTT", "onBindViewHolder worked")
 
     }
 

@@ -3,6 +3,7 @@
     package="uz.devosmon.postdogs">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:roundIcon="@drawable/dog"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CommentActivity"></activity>
+        <activity android:name=".CommentActivity" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".PostActivity" />
         <activity android:name=".PostsActivity" />

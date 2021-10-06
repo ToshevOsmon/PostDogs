@@ -16,9 +16,9 @@ object ApiService {
             val builder = OkHttpClient.Builder()
             builder.addInterceptor(httpLoggingInterceptor)
 
-
+           // https://dummyapi.io/data/api/
             retrofit = Retrofit.Builder()
-                .baseUrl("https://dummyapi.io/data/api/")
+                .baseUrl("https://dummyapi.io/data/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(builder.build())
                 .build()
